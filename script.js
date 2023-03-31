@@ -49,33 +49,65 @@
 // }
 
 
-let menesis = "Birzelis";
+// let menesis = "Birzelis";
 
-switch(menesis) {
-    case "Gruodis":
-    case "Sausis":
-    case "Vasaris":
-        console.log(`Tu ivedei ${menesis}, o tai yra ziemos menesis`);
-        break;
-    case "Kovas":
-    case "Balandis":
-    case "Geguze":
-        console.log(`Tu ivedei ${menesis}, o tai yra pavasario menesis`);
-        break;
-    case "Birzelis":
-    case "Liepa":
-    case "Rugpjutis":
-        console.log(`Tu ivedei ${menesis}, o tai yra vasaros menesis`);
-        break;
-    case "Rugsejis":
-    case "Spalis":
-    case "Lapkritis":
-        console.log(`Tu ivedei ${menesis}, o tai yra rudens menesis`);
-        break;
-        default:
-            console.log("Netaisyklingai ivestas menesis");
+// switch(menesis) {
+//     case "Gruodis":
+//     case "Sausis":
+//     case "Vasaris":
+//         console.log(`Tu ivedei ${menesis}, o tai yra ziemos menesis`);
+//         break;
+//     case "Kovas":
+//     case "Balandis":
+//     case "Geguze":
+//         console.log(`Tu ivedei ${menesis}, o tai yra pavasario menesis`);
+//         break;
+//     case "Birzelis":
+//     case "Liepa":
+//     case "Rugpjutis":
+//         console.log(`Tu ivedei ${menesis}, o tai yra vasaros menesis`);
+//         break;
+//     case "Rugsejis":
+//     case "Spalis":
+//     case "Lapkritis":
+//         console.log(`Tu ivedei ${menesis}, o tai yra rudens menesis`);
+//         break;
+//         default:
+//             console.log("Netaisyklingai ivestas menesis");
+// }
+
+// // tht4rh4r5th45h45hb54hb4h54h5u65u56
+
+// // rgjriugji3gjvieji93rgvi9e3gr
+
+
+function calculator(numeris1, numeris2, specialus) {
+   if (specialus  == "*") {
+     return console.log(numeris1 * numeris2);
+   }
+   else if (specialus  == "+") {
+     return console.log(numeris1 + numeris2);
+   }
+   else if (specialus  == "-") {
+     return console.log(numeris1 - numeris2);
+   }
+   else if (specialus  == "/") {
+     return console.log(numeris1 / numeris2);
+   }
+
+   else {
+       return console.log("ivedete netaisyklinga simboli");
+   }
 }
 
-// tht4rh4r5th45h45hb54hb4h54h5u65u56
+calculator(10, 5, "/");
+calculator(20, 5, "*");
+calculator(100, 5, "-");
+calculator(20, 5, "+");
+calculator(20, 5, "++");
 
-// rgjriugji3gjvieji93rgvi9e3gr
+
+
+
+
+
