@@ -1,0 +1,22 @@
+img {
+    width: 30%;
+    height: 500px;
+    margin: 10px;
+}
+
+input {
+    width: 200px;
+    height: 25px;
+}
+
+button {
+    width: 100px;
+    background-color: lightgreen;
+    height: 30px;
+}
+
+body {
+    background-color: rgba(37, 37, 37, 0.993);
+}
+
+

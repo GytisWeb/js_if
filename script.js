@@ -1,113 +1,119 @@
-// let vardas = "Gytis";
-// let amzius = 25;
-// let grupe = "JS1s";
+const buttons = document.querySelector(".btn");
+const main = document.querySelector(".main");
+const inputs = document.querySelector(".search");
+const id = "rJC3zqn7fImNa5o32ktX970LRrrvCuLm8yoUjewIt7E";
 
 
-// console.log(`Mano vardas yra ${vardas}, mano amzius yra ${amzius} ir grupe yra ${grupe}`);
-// console.log("Mano vardas yra ${vardas}, mano amzius yra ${amzius} ir grupe yra ${grupe}");
-// console.log('Mano vardas yra ${vardas}, mano amzius yra ${amzius} ir grupe yra ${grupe}');
-// console.log(`Mano vardas yra ${vardas}, mano amzius yra 25 ir grupe yra ${grupe}`);
 
 
-// let vidurkis = 8.1;
-// let lankomumas = true;
 
-// if (vidurkis >= 8 && lankomumas) {
-//     console.log(`Jusu vidurkis yra ${vidurkis} ir lankomumas yra geras. todel stipendija gausite`);
-// } else {
-//     console.log("Stipendija nepriklauso");
+
+// const getData = async () => {
+//   try {
+//    const sriubaPuode = await fetch("https://dog.ceo/api/breeds/image/random");
+//    console.log(sriubaPuode);
+//    const sriubaLeksteja = await sriubaPuode.json();
+//    console.log(sriubaLeksteja);
+//    myImg.src = sriubaLeksteja.message
+//   }  
+//   catch(err) {
+//   console.log(err);
+//   }
+// }
+
+
+// buttons.addEventListener("click", getData);
+
+
+
+
+// const getData = async () => {
+//   try {
+//    const sriubaPuode = await fetch("https://api.thecatapi.com/v1/images/search");
+//    console.log(sriubaPuode);
+//    const sriubaLeksteja = await sriubaPuode.json();
+//    console.log(sriubaLeksteja);
+//    myImg.src = sriubaLeksteja[0].url;
+//   }  
+//   catch(err) {
+//   console.log(err);
+//   }
 // }
 
 
 
-// let pajamos = 1200;
-// let vaikai = 2;
 
-// if (pajamos >= 800 && vaikai === 0) {
-//     console.log("Sveikinu paskola gausite");
-// } else if (pajamos >= 1000 && vaikai === 1) {
-//     console.log("Sveikinu paskola gausite ir su vaiku");
-// } else if (pajamos >= 1200 && vaikai === 2) {
-//     console.log("Sveikinu gavote paskola taip pat");
-// } else {
-//     console.log("Deja, paskolos negausite");
+// buttons.addEventListener("click", getData);
+
+
+
+// const second = () => {
+//   setTimeout(() => {
+//     console.log("Async Hey There");
+//   }, 20000);
 // }
 
-
-
-// let pajamos = 1400;
-// let vaikai = 2;
-
-// if (pajamos >= 800 && vaikai === 0) {
-//     console.log(`Sveikinu paskola gausite`);
-// } else if (pajamos >= 1000 && vaikai === 1) {
-//     console.log("Sveikinu paskola gausite ir su vaiku");
-// } else if (pajamos >= 1200 && vaikai === 2) {
-//     console.log("Sveikinu gavote paskola taip pat ");
-// } else {
-//     console.log("Deja, paskolos negausite");
+// const first = () => {
+//   console.log("Hey there");
+//   second();
+//   console.log("The end");
 // }
+// first();
 
 
-// let menesis = "Birzelis";
+// const artWork = function (art) {
+//   fetch(`https://api.artic.edu/api/v1/artworks`)
+//     .then(function (response) {
+//       console.log(response);
+//       return response.json();
+//     })
+//     .then(function (data) {
+//       console.log(data);
+//       for (let i = 0; i < 6; i++) {
+//         const myTitle = document.createElement('h1');
+//         const myID = document.createElement('p');
+//         const myImg = document.createElement('img');
+//         myTitle.textContent = data.data[i].title;
+//         myID.textContent = data.data[i].artist_title;
+//         main.appendChild(myTitle);
+//         main.appendChild(myID);
+//         console.log(myTitle);
+//         console.log(data.data[i]);
+//       }
+//     });
+// };
 
-// switch(menesis) {
-//     case "Gruodis":
-//     case "Sausis":
-//     case "Vasaris":
-//         console.log(`Tu ivedei ${menesis}, o tai yra ziemos menesis`);
-//         break;
-//     case "Kovas":
-//     case "Balandis":
-//     case "Geguze":
-//         console.log(`Tu ivedei ${menesis}, o tai yra pavasario menesis`);
-//         break;
-//     case "Birzelis":
-//     case "Liepa":
-//     case "Rugpjutis":
-//         console.log(`Tu ivedei ${menesis}, o tai yra vasaros menesis`);
-//         break;
-//     case "Rugsejis":
-//     case "Spalis":
-//     case "Lapkritis":
-//         console.log(`Tu ivedei ${menesis}, o tai yra rudens menesis`);
-//         break;
-//         default:
-//             console.log("Netaisyklingai ivestas menesis");
-// }
+// artWork();
 
-// // tht4rh4r5th45h45hb54hb4h54h5u65u56
-
-// // rgjriugji3gjvieji93rgvi9e3gr
+let results = "";
 
 
-function calculator(numeris1, numeris2, specialus) {
-   if (specialus  == "*") {
-     return console.log(numeris1 * numeris2);
-   }
-   else if (specialus  == "+") {
-     return console.log(numeris1 + numeris2);
-   }
-   else if (specialus  == "-") {
-     return console.log(numeris1 - numeris2);
-   }
-   else if (specialus  == "/") {
-     return console.log(numeris1 / numeris2);
-   }
 
-   else {
-       return console.log("ivedete netaisyklinga simboli");
-   }
+const artWork = function () {
+  main.replaceChildren();
+  fetch(`https://api.unsplash.com/photos/random?client_id=${id}&count=10&query=${results}`).then(function (response){
+    console.log(response)
+    return response.json();
+  }).then(function (data) {
+    console.log(data);
+     for(let i = 0; i<10; i++) {
+      const myImg = document.createElement("img")
+      myImg.src = data[i].urls.small;
+      main.appendChild(myImg);
+     }
+         
+  });
 }
 
-calculator(10, 5, "/");
-calculator(20, 5, "*");
-calculator(100, 5, "-");
-calculator(20, 5, "+");
-calculator(20, 5, "++");
 
 
 
+function informacija(e) {
+   e.preventDefault()
+   results = inputs.value;
+   console.log(results);
+   artWork();
+}
 
 
-
+buttons.addEventListener("click", informacija);
