@@ -1,0 +1,8 @@
+.oneBook {
+    border: 1px gray solid;
+    width: 400px;
+}
+
+.oneBookImg {
+    max-width: 100%;
+}
